@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    <meta name="description" content="Hexo Theme Redefine">
+    <meta name="author" content="Atmizz">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-redefine.png">
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/2023/02/17/java学习_入门/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Java学习_入门">
+    <meta property="og:description" content="Hexo Theme Redefine">
+    <meta property="og:url" content="http://example.com2023/02/17/Java学习_入门/">
+    <meta property="og:image" content="/images/redefine-logo.svg">
+    <meta property="og:site_name" content="Atmizz&#39;s Blog">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Java学习_入门">
+    <meta name="twitter:description" content="Hexo Theme Redefine">
+    <meta name="twitter:image" content="/images/redefine-logo.svg">
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/redefine-logo.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/redefine-logo.svg">
+    <meta name="theme-color" content="#005080">
+    <link rel="shortcut icon" href="/images/redefine-logo.svg">
+    
+    <title>
+        
+            Java学习_入门 -
+        
+        Atmizz&#39;s Blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/assets/fonts.css">
+
+    
+    
+    
+    
+    <script id="hexo-configurations">
+    let REDEFINE = window.REDEFINE || {};
+    REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.xml"};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/Avatar.jpg","favicon":"/images/redefine-logo.svg","article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"/images/Love1.jpg","dark":"/images/Love2.jpg"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"description":"Welcome to My Blog!","custom_font":{"enable":false,"font_family":null,"font_url":null}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":true},"code_block":{"copy":true,"style":"mac","custom_font":{"enable":false,"font_family":null,"font_url":null}},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"1.1.6","friend_links":{"columns":2},"home_article":{"date_format":"auto","category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":3}},"plugins":{"aplayer":{"enable":false,"audio":[{"name":null,"artist":null,"url":null,"cover":null},{"name":null,"artist":null,"url":null,"cover":null}]}}};
+    REDEFINE.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+    
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="menu-wrapper">
+    
+    <div class="menu-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                Atmizz&#39;s Blog
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        
+                            <li class="menu-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        HOME
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="menu-drawer">
+        <ul class="drawer-menu-list">
+            
+                
+                    <li class="drawer-menu-item flex-center">
+                        <a class="" 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                HOME
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            
+            
+                <div class="article-title">
+                    <h1 class="article-title-regular">Java学习_入门</h1>
+                </div>
+            
+                
+            
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/Avatar.jpg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">Atmizz</span>
+                            
+                                <span class="author-label">蒟蒻</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="pc">2023-02-17 23:57:54</span>
+        <span class="mobile">2023-02-17 23:57</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="pc">2023-02-20 21:51:55</span>
+            <span class="mobile">2023-02-20 21:51</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/notes/">notes</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-file-word"></i>&nbsp;<span>2.4k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>9 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <h2 id="前置"><a href="#前置" class="headerlink" title="前置"></a>前置</h2><h3 id="常用DOS命令"><a href="#常用DOS命令" class="headerlink" title="常用DOS命令"></a>常用DOS命令</h3><ul>
+<li>dir:列出当前目录的文件和文件夹</li>
+<li>md:创建目录</li>
+<li>rd:删除目录</li>
+<li>cd:进入指定目录</li>
+<li>cd..:返回到上一级目录</li>
+<li>cd:返回到根目录</li>
+<li>del:删除文件</li>
+<li>exit:退出dos命令行</li>
+<li>echo 内容&gt;文件 : 把内容写入文件</li>
+</ul>
+<h3 id="取随机数-a-b"><a href="#取随机数-a-b" class="headerlink" title="取随机数[a, b]"></a>取随机数[a, b]</h3><p>取随机数用到Math类的random方法：Math.random().</p>
+<p>该方法返回的值为double类型：[0.0,1.0).</p>
+<p>取随机数公式[a, b]： </p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">value</span> <span class="operator">=</span> (<span class="type">int</span>)(Math.random() * (b - a + <span class="number">1</span>) + a);</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="测算程序运行时间"><a href="#测算程序运行时间" class="headerlink" title="测算程序运行时间"></a>测算程序运行时间</h3><p>所用方法为System.currentTimeMillis().该方法返回值类型为long，意义为1970-01-01到现在所经过的时间，单位为毫秒（ms）。</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">long</span> <span class="variable">start</span> <span class="operator">=</span> System.currentTimeMillis();</span><br><span class="line"><span class="type">long</span> <span class="variable">end</span> <span class="operator">=</span> System.currentTimeMillis();</span><br><span class="line"><span class="type">long</span> <span class="variable">time</span> <span class="operator">=</span> end - start;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="$Day_1$"></a>$Day_1$</h2><h3 id="第一个程序-Hello-World"><a href="#第一个程序-Hello-World" class="headerlink" title="第一个程序 Hello World"></a>第一个程序 Hello World</h3><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h4><ol>
+<li>一个java源文件可以声明多个class，但是只能最多有一个类声明为public且<strong>类名必须与文件名相同</strong>.</li>
+<li>程序的入口是main()方法，格式是固定的.</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol start="3">
+<li>关于输出语句,println<strong>自带换行</strong>,print<strong>不换行</strong>.</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">System.out.print(<span class="string">&quot;Hello World!&quot;</span>);</span><br></pre></td></tr></table></figure></div>
+
+<ol start="4">
+<li>每一个执行语句末尾都有分号，与C++</li>
+</ol>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>java注释有三种：单行注释、多行注释、文档注释（java特有）.</p>
+<ul>
+<li>单行注释和多行注释。</li>
+</ul>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 单行注释</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">多行注释</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>文档注释<br>  注释内容可以被JDK提供的工具javadoc所解析，生成一套以网页为形式体现的该程序的说明文档。</li>
+</ul>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"><span class="doctag">@author</span> ..</span></span><br><span class="line"><span class="comment"><span class="doctag">@version</span> ..</span></span><br><span class="line"><span class="comment">...</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></div>
+
+<p>操作方式(在cmd中实现)</p>
+<div class="highlight-container" data-rel="Cmd"><figure class="iseeu highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javadoc -d 文档名字 -author -version HelloWorld.java</span><br></pre></td></tr></table></figure></div>
+
+<p>如果有乱码出现，后面再添加 <code>-encoding utf-8</code></p>
+<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="$Day_2$"></a>$Day_2$</h2><h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><h4 id="整型变量"><a href="#整型变量" class="headerlink" title="整型变量"></a>整型变量</h4><table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">占用储存空间</th>
+<th align="center">表示范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">btye</td>
+<td align="center">1字节 &#x3D; 8bit</td>
+<td align="center">$-128$~$127$</td>
+</tr>
+<tr>
+<td align="center">short</td>
+<td align="center">2字节</td>
+<td align="center">$-2^{15}$~$2^{15}-1$</td>
+</tr>
+<tr>
+<td align="center">int</td>
+<td align="center">4字节</td>
+<td align="center">$-2^{31}$~$2^{31}-1$</td>
+</tr>
+<tr>
+<td align="center">long</td>
+<td align="center">8字节</td>
+<td align="center">$-2^{63}$~$2^{63}-1$</td>
+</tr>
+</tbody></table>
+<ul>
+<li>注意：<br>定义long型变量时，变量须以l或L结尾.</li>
+</ul>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">l1 = <span class="number">123L</span>;</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="浮点型变量"><a href="#浮点型变量" class="headerlink" title="浮点型变量"></a>浮点型变量</h4><table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">占用储存空间</th>
+<th align="center">表示范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">float</td>
+<td align="center">4字节</td>
+<td align="center">$-3.403E38$~$3.403E38$</td>
+</tr>
+<tr>
+<td align="center">double</td>
+<td align="center">8字节</td>
+<td align="center">$-1.798E308$~$1.798E308$</td>
+</tr>
+</tbody></table>
+<ul>
+<li>注意：<br>定义float型变量时，变量必须以f或F结尾.</li>
+</ul>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f1 = <span class="number">3.1415926f</span>;</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="字符型变量"><a href="#字符型变量" class="headerlink" title="字符型变量"></a>字符型变量</h4><table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">占用储存空间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">char</td>
+<td align="center">2字节</td>
+</tr>
+</tbody></table>
+<ul>
+<li>注意：</li>
+</ul>
+<ol>
+<li>字符可以表示转义字符.</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> <span class="variable">ch</span> <span class="operator">=</span> <span class="string">&#x27;\n&#x27;</span>;</span><br></pre></td></tr></table></figure></div>
+
+<ol start="2">
+<li>直接使用Unicode值表示字符型常量：’\uXXXX’.比如\u000a表示\n.</li>
+</ol>
+<p>其中<strong>转义字符表</strong>如下：</p>
+<table>
+<thead>
+<tr>
+<th>转义字符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\b</td>
+<td>退格符</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>换行符</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>回车符</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>制表符</td>
+</tr>
+<tr>
+<td>\“</td>
+<td>双引号</td>
+</tr>
+<tr>
+<td>\‘</td>
+<td>单引号</td>
+</tr>
+<tr>
+<td>\\</td>
+<td>反斜杠</td>
+</tr>
+</tbody></table>
+<h4 id="布尔型变量"><a href="#布尔型变量" class="headerlink" title="布尔型变量"></a>布尔型变量</h4><p>定义时：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="type">boolean</span> <span class="variable">bb1</span> <span class="operator">=</span> <span class="literal">true</span> / <span class="literal">false</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<h4 id="基本数据类型转换"><a href="#基本数据类型转换" class="headerlink" title="基本数据类型转换"></a>基本数据类型转换</h4><p>基本数据类型转换包括<strong>自动类型提升</strong>和<strong>强制类型转换</strong>.</p>
+<ul>
+<li>注意：<br>  基本数据类型转换不包含boolean类型.</li>
+</ul>
+<h5 id="自动类型提升"><a href="#自动类型提升" class="headerlink" title="自动类型提升"></a>自动类型提升</h5><p>容量小的数据类型的变量与容量大的数据类型的变量运算时，结果自动提升为容量大的数据类型.</p>
+<p>$byte、char、short -&gt; int -&gt; long -&gt; float -&gt; double$</p>
+<ul>
+<li>注意:<br>  当byte、short、char三种数据类型的变量做运算时，结果为int类型</li>
+</ul>
+<h5 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h5><p>即自动类型提升的逆运算.</p>
+<ol>
+<li>需要使用强转符:().</li>
+<li>可能会导致精度损失.</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">double</span> <span class="variable">d1</span> <span class="operator">=</span> <span class="number">12.3</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">i1</span> <span class="operator">=</span> (<span class="type">int</span>) d1;</span><br><span class="line">i3 = <span class="number">12</span>;</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="基本变量运算规则的两个特殊情况"><a href="#基本变量运算规则的两个特殊情况" class="headerlink" title="基本变量运算规则的两个特殊情况"></a>基本变量运算规则的两个特殊情况</h4><h4 id="特殊情况一"><a href="#特殊情况一" class="headerlink" title="特殊情况一"></a>特殊情况一</h4><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">long</span> <span class="variable">l</span> <span class="operator">=</span> <span class="number">12312</span>;</span><br><span class="line">System.out.println(l);</span><br></pre></td></tr></table></figure></div>
+
+<pre><code> 该程序应该是在变量后面加L或l,但是现在不会报错，是由于12312属于int，这种情况为自动类型提升.
+</code></pre>
+<h4 id="特殊情况二"><a href="#特殊情况二" class="headerlink" title="特殊情况二"></a>特殊情况二</h4><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">byte</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">12</span>;</span><br><span class="line"><span class="type">byte</span> <span class="variable">b1</span> <span class="operator">=</span> b + <span class="number">1</span>;</span><br><span class="line"><span class="type">float</span> <span class="variable">f</span> <span class="operator">=</span> b1 + <span class="number">12.3</span>;</span><br></pre></td></tr></table></figure></div>
+
+<pre><code>这种情况会报错，因为整型常量默认为int；浮点型变量默认为double.
+</code></pre>
+<h3 id="引用数据类型1"><a href="#引用数据类型1" class="headerlink" title="引用数据类型1"></a>引用数据类型1</h3><h4 id="字符串类型"><a href="#字符串类型" class="headerlink" title="字符串类型"></a>字符串类型</h4><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> <span class="string">&quot;&quot;</span>;</span><br></pre></td></tr></table></figure></div>
+
+<p>String 可以和8种基本数据类型做运算，且运算只能是来连接运算：+，连接后的结果为String类型.</p>
+<h5 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h5><ol>
+<li><p>.equals()<br> 字符串比较，相同时返回true，不相同返回false。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str1.equals(str2);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>.charAt()<br> 取字符串的某个字符。</p>
+</li>
+</ol>
+<h2 id="Day-3"><a href="#Day-3" class="headerlink" title="$Day_3$"></a>$Day_3$</h2><h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>本部分较为简单，所以仅列出部分Java特有的运算符.</p>
+<h4 id="比较运算符-instanceof"><a href="#比较运算符-instanceof" class="headerlink" title="比较运算符 instanceof"></a>比较运算符 instanceof</h4><ul>
+<li><em>暂时留坑</em></li>
+</ul>
+<h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><p><strong>逻辑运算符操作的都是boolean类型的变量</strong></p>
+<p>特别出现的是短路与(&amp;&amp;)以及短路或(||)，这两个与逻辑与和逻辑或的区别就是，短路与前一个表达式为false直接返回false，不会进行第二个表达式，短路或前一个表达式为true直接返回true，不会进行第二个表达式.</p>
+<p>比如：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">LogicTest</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">boolean</span> <span class="variable">b1</span> <span class="operator">=</span> <span class="literal">false</span>, b2 = <span class="literal">false</span>;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i1</span> <span class="operator">=</span> i2 = <span class="number">10</span>;</span><br><span class="line">		<span class="keyword">if</span> (b1 &amp; (i1 ++ &gt; <span class="number">0</span>)) &#123;  </span><br><span class="line">			System.out.println(i1);  </span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;  </span><br><span class="line">			System.out.println(i1);  </span><br><span class="line">		&#125;  </span><br><span class="line">		<span class="keyword">if</span> (b2 &amp;&amp; (i2 ++ &gt; <span class="number">0</span>)) &#123;  </span><br><span class="line">			System.out.println(i2);  </span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;  </span><br><span class="line">			System.out.println(i2);  </span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>输出的结果： $i1 &#x3D; 11$,$i2&#x3D;10$</p>
+<h4 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h4><p><strong>无符号右移</strong> 被移位二进制最高位无论是1或者0，空位都用0来补.正数&#x2F;2，负数变正&#x2F;2.</p>
+<h5 id="位运算应用——交换两个变量的值"><a href="#位运算应用——交换两个变量的值" class="headerlink" title="位运算应用——交换两个变量的值"></a>位运算应用——交换两个变量的值</h5><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">1</span>, num2 = <span class="number">2</span>;</span><br><span class="line">num1 = num1 ^ num2;</span><br><span class="line">num2 = num1 ^ num2;</span><br><span class="line">num1 = num1 ^ num2;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="Day-4"><a href="#Day-4" class="headerlink" title="$Day_4$"></a>$Day_4$</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><ol>
+<li><p>导包：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>Scanner的实例化：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Scanner <span class="title function_">scan</span><span class="params">(变量名)</span> = <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>调用Scanner类的相关方法，来获取指定类型的变量.</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> scan.nextInt();</span><br><span class="line"><span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> scan.next();</span><br><span class="line"><span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> scan.nextLine();</span><br><span class="line"><span class="type">double</span> <span class="variable">d</span> <span class="operator">=</span> scan.nextDoube();</span><br><span class="line"><span class="type">boolean</span> <span class="variable">b</span> <span class="operator">=</span> scan.nextBoolean();</span><br><span class="line">...</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<ul>
+<li>注意：<ol>
+<li>对于char型的获取，Scanner没有提供相关方法，只能获取一个字符串.</li>
+<li>但是char型的变量可以获取String型变量的某个字符.  <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> <span class="variable">genderChar</span> <span class="operator">=</span> 字符串.charAt(<span class="number">0</span>);</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+</li>
+</ul>
+<p>需要根据相应的方法输入指定类型的值。如果输入的数据类型与要求的数据类型不同，会报异常：InputMisMatchExecption，导致程序终止。</p>
+<h3 id="swicth-case结构"><a href="#swicth-case结构" class="headerlink" title="swicth-case结构"></a>swicth-case结构</h3><p>switch中的表达式有6中数据类型：byte、short、char、int、枚举类型（JDK5.0新增）、String类型（JDK7.0新增）。</p>
+<h4 id="switch-case合并"><a href="#switch-case合并" class="headerlink" title="switch-case合并"></a>switch-case合并</h4><p>如果多个case的执行语句一致时，可以进行合并。</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">socre</span> <span class="operator">=</span> <span class="number">78</span>;</span><br><span class="line"><span class="keyword">switch</span> (socre / <span class="number">10</span>) &#123;</span><br><span class="line"><span class="keyword">case</span> <span class="number">1</span> :</span><br><span class="line"><span class="keyword">case</span> <span class="number">2</span> :</span><br><span class="line"><span class="keyword">case</span> <span class="number">3</span> :</span><br><span class="line"><span class="keyword">case</span> <span class="number">4</span> :</span><br><span class="line"><span class="keyword">case</span> <span class="number">5</span> :</span><br><span class="line">	System.out.println(<span class="string">&quot;成绩不合格&quot;</span>);</span><br><span class="line">	<span class="keyword">break</span>;</span><br><span class="line"><span class="keyword">case</span> <span class="number">6</span> :</span><br><span class="line"><span class="keyword">case</span> <span class="number">7</span> :</span><br><span class="line"><span class="keyword">case</span> <span class="number">8</span> :</span><br><span class="line"><span class="keyword">case</span> <span class="number">9</span> :</span><br><span class="line"><span class="keyword">case</span> <span class="number">10</span> :</span><br><span class="line">	System.out.println(<span class="string">&quot;成绩合格&quot;</span>);</span><br><span class="line">	<span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="带标签的break和continue"><a href="#带标签的break和continue" class="headerlink" title="带标签的break和continue"></a>带标签的break和continue</h3><p>break ：结束指定标识的循环结构<br>continue ：结束指定标识的一次循环</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">label : <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= n; ++ i) &#123;</span><br><span class="line">	<span class="keyword">if</span>(i % <span class="number">17</span> == <span class="number">0</span>)</span><br><span class="line">		<span class="keyword">break</span> label;</span><br><span class="line">		<span class="comment">//continue label;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="return的使用"><a href="#return的使用" class="headerlink" title="return的使用"></a>return的使用</h3><p>return的功能是结束一个方法。</p>
+<h2 id="Day-5"><a href="#Day-5" class="headerlink" title="$Day_5$"></a>$Day_5$</h2><h3 id="Create-a-new-java-package（新建一个包）"><a href="#Create-a-new-java-package（新建一个包）" class="headerlink" title="Create a new java package（新建一个包）"></a>Create a new java package（新建一个包）</h3><p>在src文件下创建，名字形式为</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">域名.网站名.功能</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="引用数据类型2"><a href="#引用数据类型2" class="headerlink" title="引用数据类型2"></a>引用数据类型2</h3><h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4><ol>
+<li>数组的声明和初始化 <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 一维数组</span></span><br><span class="line"><span class="type">int</span>[] name; <span class="comment">// 声明</span></span><br><span class="line"><span class="comment">// 静态初始化</span></span><br><span class="line">name = <span class="keyword">new</span> <span class="title class_">int</span>[]&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>&#125;; <span class="comment">// 初始化</span></span><br><span class="line"><span class="type">int</span> <span class="variable">name</span> <span class="operator">=</span> &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>&#125;;</span><br><span class="line"><span class="comment">// 动态初始化</span></span><br><span class="line">String[] name = <span class="keyword">new</span> <span class="title class_">String</span>[<span class="number">5</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 二维数组</span></span><br><span class="line"><span class="type">int</span> [][] name = <span class="keyword">new</span> <span class="title class_">int</span>[][] &#123;&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;, &#123;<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>&#125;, &#123;<span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>&#125;&#125;;</span><br><span class="line"><span class="type">int</span> [][] name = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">3</span>][<span class="number">3</span>];</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> [][] name = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">3</span>][];</span><br><span class="line">name[<span class="number">1</span>] = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">3</span>];</span><br></pre></td></tr></table></figure></div></li>
+<li>调用指定位置的元素 <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 一维数组</span></span><br><span class="line">name[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div></li>
+<li>获取数组的长度 <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">len</span> <span class="operator">=</span> name.length;</span><br></pre></td></tr></table></figure></div></li>
+<li>如何遍历数组 <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; name.length; ++ i)</span><br><span class="line">	System.out.println(name[i]);</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h2 id="Day-6"><a href="#Day-6" class="headerlink" title="$Day_6$"></a>$Day_6$</h2><h3 id="数组中的常见算法"><a href="#数组中的常见算法" class="headerlink" title="数组中的常见算法"></a>数组中的常见算法</h3><h4 id="数组赋值"><a href="#数组赋值" class="headerlink" title="数组赋值"></a>数组赋值</h4><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span>[] arr1, arr2;</span><br><span class="line">arr1 = <span class="keyword">new</span> <span class="title class_">int</span>[]&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;;</span><br><span class="line">arr2 = arr1; <span class="comment">// 实质：赋值地址</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="数组的工具类"><a href="#数组的工具类" class="headerlink" title="数组的工具类"></a>数组的工具类</h3><p>需要引用操作数组工具类.</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="判断两个数组是否相等"><a href="#判断两个数组是否相等" class="headerlink" title="判断两个数组是否相等"></a>判断两个数组是否相等</h4><p><code>boolean equals(int[] a, int[] b)</code></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">boolean</span> <span class="variable">isEquals</span> <span class="operator">=</span> Arrays.equals(arr1, arr2);</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="输出数组信息"><a href="#输出数组信息" class="headerlink" title="输出数组信息"></a>输出数组信息</h4><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(Arrays.toString(arr1));</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="把指定的值填充到数组中"><a href="#把指定的值填充到数组中" class="headerlink" title="把指定的值填充到数组中"></a>把指定的值填充到数组中</h4><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Arrays.fill(arr1, <span class="number">10</span>);</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h4><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Arrays.sort(arr1);</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="对排序后的数组进行二分法检索指定的值"><a href="#对排序后的数组进行二分法检索指定的值" class="headerlink" title="对排序后的数组进行二分法检索指定的值"></a>对排序后的数组进行二分法检索指定的值</h4><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">index</span> <span class="operator">=</span> Arrays.binarySearch(arr2, <span class="number">3</span>);</span><br></pre></td></tr></table></figure></div>
+
+
+<h2 id="Day-7"><a href="#Day-7" class="headerlink" title="$Day_7$"></a>$Day_7$</h2><h3 id="Java-面向对象的三条主线"><a href="#Java-面向对象的三条主线" class="headerlink" title="$Java$面向对象的三条主线"></a>$Java$面向对象的三条主线</h3><ol>
+<li>Java类及类的成员：属性、方法、构造器；代码块、内部类</li>
+<li>面向对象的三大特征：封装性、继承性、多态性、（抽象性）</li>
+<li>其他关键字：this、super、static、final、abstract、interface、package、import…</li>
+</ol>
+<h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">personTest</span> &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 类</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">person</span> &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>类包括属性（成员变量、field）和方法（成员方法、函数、method）。<br>我个人感觉像C++里的namespace。</p>
+<h4 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h4><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">person</span> &#123;</span><br><span class="line"><span class="comment">//  属性</span></span><br><span class="line">  String name;</span><br><span class="line">  <span class="type">int</span> age;</span><br><span class="line">  <span class="type">boolean</span> isMale;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h5 id="属性和局部变量的不同"><a href="#属性和局部变量的不同" class="headerlink" title="属性和局部变量的不同"></a>属性和局部变量的不同</h5><ol>
+<li>相同点：<ol>
+<li>定义变量格式： <code>数据类型 变量名=变量值</code></li>
+<li>先声明，后使用。</li>
+<li>变量都有对应的作用域</li>
+</ol>
+</li>
+<li>不同点：<ol>
+<li>声明位置不同<ol>
+<li>属性：直接定义在类里</li>
+<li>局部变量：声明在方法内、方法形参、代码块内、构造器内、构造期内部</li>
+</ol>
+</li>
+<li>关于权限修饰符的不同<ol>
+<li>属性：可以声明属性时，指明其权限，使用权限修饰符（常见的权限修饰符：private、public、缺省、protected）。</li>
+<li>局部变量：不可以使用权限修饰符。</li>
+</ol>
+</li>
+<li>默认初始化值的情况<ol>
+<li>属性：类的属性，根据其属性，都有默认初始化值。</li>
+<li>局部变量：无默认初始化值。<strong>特别的，形参在调用时赋值即可。</strong></li>
+</ol>
+</li>
+<li>在内存中加载的位置不同<ol>
+<li>属性：加载到<strong>堆</strong>空间。</li>
+<li>局部变量：加载到<strong>栈</strong>空间中。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="方法-1"><a href="#方法-1" class="headerlink" title="方法"></a>方法</h4><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">person</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span> &#123;</span><br><span class="line">	    System.out.println(<span class="string">&quot;Eat&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">sleep</span><span class="params">()</span> &#123;</span><br><span class="line">		System.out.println(<span class="string">&quot;Sleep&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">talk</span><span class="params">(String language)</span> &#123;</span><br><span class="line">		System.out.println(<span class="string">&quot;Talk &quot;</span> + language);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：Java学习_入门</li>
+        <li>Post author：Atmizz</li>
+        <li>Create time：2023-02-17 23:57:54</li>
+        <li>
+            Post link：https://atmizz.github.io/2023/02/17/Java学习_入门/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+                </div>
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/notes/">#notes</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/2023/02/18/AcWing%E6%9D%AF%20%E7%AC%AC91%E5%9C%BA%E5%91%A8%E8%B5%9B/"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">AcWing杯 第91场周赛</span>
+                                    <span class="post-nav-item">Prev posts</span>
+                                </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2023/02/17/C++%E6%A8%A1%E6%9D%BF/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">C++模板</span>
+                                    <span class="post-nav-item">Next posts</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+
+            
+                <div class="comment-container">
+                    <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fa-solid fa-comments"></i>&nbsp;Comments
+    </div>
+    
+
+        
+            
+    <div id="gitalk-container"></div>
+    <script data-pjax
+            src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+    <script data-pjax>
+
+        function loadGitalk() {
+            let __gitalk__pathname = decodeURI(location.pathname);
+            const __gitalk__pathnameLength = __gitalk__pathname.length;
+            const __gitalk__pathnameMaxLength = 50;
+            if (__gitalk__pathnameLength > __gitalk__pathnameMaxLength) {
+                __gitalk__pathname = __gitalk__pathname.substring(0, __gitalk__pathnameMaxLength - 3) + '...';
+            }
+
+            try {
+                Gitalk && new Gitalk({
+                    clientID: '4e032e2fc2a3097deb2d',
+                    clientSecret: '68494d09c74333adcfc2885b8987a1e5558c93f3',
+                    repo: 'hexo-redefine-comment',
+                    owner: 'Atmizz',
+                    admin: ['Atmizz'],
+                    id: __gitalk__pathname,
+                    language: 'en'
+                }).render('gitalk-container');
+
+            } catch (e) {
+                window.Gitalk = null;
+            }
+        }
+
+        if ('true') {
+            const loadGitalkTimeout = setTimeout(() => {
+                loadGitalk();
+                clearTimeout(loadGitalkTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadGitalk);
+        }
+    </script>
+
+
+
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">Java学习_入门</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE"><span class="nav-text">前置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8DOS%E5%91%BD%E4%BB%A4"><span class="nav-text">常用DOS命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%96%E9%9A%8F%E6%9C%BA%E6%95%B0-a-b"><span class="nav-text">取随机数[a, b]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%8B%E7%AE%97%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4"><span class="nav-text">测算程序运行时间</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Day-1"><span class="nav-text">$Day_1$</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F-Hello-World"><span class="nav-text">第一个程序 Hello World</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F%E7%82%B9"><span class="nav-text">注意点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-text">注释</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Day-2"><span class="nav-text">$Day_2$</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-text">基本数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B4%E5%9E%8B%E5%8F%98%E9%87%8F"><span class="nav-text">整型变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E5%9E%8B%E5%8F%98%E9%87%8F"><span class="nav-text">浮点型变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E5%9E%8B%E5%8F%98%E9%87%8F"><span class="nav-text">字符型变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%83%E5%B0%94%E5%9E%8B%E5%8F%98%E9%87%8F"><span class="nav-text">布尔型变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="nav-text">基本数据类型转换</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%87%AA%E5%8A%A8%E7%B1%BB%E5%9E%8B%E6%8F%90%E5%8D%87"><span class="nav-text">自动类型提升</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="nav-text">强制类型转换</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%8F%98%E9%87%8F%E8%BF%90%E7%AE%97%E8%A7%84%E5%88%99%E7%9A%84%E4%B8%A4%E4%B8%AA%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5"><span class="nav-text">基本变量运算规则的两个特殊情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5%E4%B8%80"><span class="nav-text">特殊情况一</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5%E4%BA%8C"><span class="nav-text">特殊情况二</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B1"><span class="nav-text">引用数据类型1</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B"><span class="nav-text">字符串类型</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%96%B9%E6%B3%95"><span class="nav-text">方法</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Day-3"><span class="nav-text">$Day_3$</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6-instanceof"><span class="nav-text">比较运算符 instanceof</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">位运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97%E5%BA%94%E7%94%A8%E2%80%94%E2%80%94%E4%BA%A4%E6%8D%A2%E4%B8%A4%E4%B8%AA%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC"><span class="nav-text">位运算应用——交换两个变量的值</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Day-4"><span class="nav-text">$Day_4$</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5"><span class="nav-text">输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#swicth-case%E7%BB%93%E6%9E%84"><span class="nav-text">swicth-case结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#switch-case%E5%90%88%E5%B9%B6"><span class="nav-text">switch-case合并</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%A6%E6%A0%87%E7%AD%BE%E7%9A%84break%E5%92%8Ccontinue"><span class="nav-text">带标签的break和continue</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#return%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-text">return的使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Day-5"><span class="nav-text">$Day_5$</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-java-package%EF%BC%88%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8C%85%EF%BC%89"><span class="nav-text">Create a new java package（新建一个包）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B2"><span class="nav-text">引用数据类型2</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E7%BB%84"><span class="nav-text">数组</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Day-6"><span class="nav-text">$Day_6$</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E7%AE%97%E6%B3%95"><span class="nav-text">数组中的常见算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E7%BB%84%E8%B5%8B%E5%80%BC"><span class="nav-text">数组赋值</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB"><span class="nav-text">数组的工具类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A4%E6%96%AD%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E6%98%AF%E5%90%A6%E7%9B%B8%E7%AD%89"><span class="nav-text">判断两个数组是否相等</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E6%95%B0%E7%BB%84%E4%BF%A1%E6%81%AF"><span class="nav-text">输出数组信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8A%8A%E6%8C%87%E5%AE%9A%E7%9A%84%E5%80%BC%E5%A1%AB%E5%85%85%E5%88%B0%E6%95%B0%E7%BB%84%E4%B8%AD"><span class="nav-text">把指定的值填充到数组中</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F"><span class="nav-text">数组排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AF%B9%E6%8E%92%E5%BA%8F%E5%90%8E%E7%9A%84%E6%95%B0%E7%BB%84%E8%BF%9B%E8%A1%8C%E4%BA%8C%E5%88%86%E6%B3%95%E6%A3%80%E7%B4%A2%E6%8C%87%E5%AE%9A%E7%9A%84%E5%80%BC"><span class="nav-text">对排序后的数组进行二分法检索指定的值</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Day-7"><span class="nav-text">$Day_7$</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E6%9D%A1%E4%B8%BB%E7%BA%BF"><span class="nav-text">$Java$面向对象的三条主线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB"><span class="nav-text">类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7"><span class="nav-text">属性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E5%92%8C%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F%E7%9A%84%E4%B8%8D%E5%90%8C"><span class="nav-text">属性和局部变量的不同</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%B9%E6%B3%95-1"><span class="nav-text">方法</span></a></li></ol></li></ol></li></ol>
+
+    </div>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+
+                
+
+            </div>
+
+
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2023</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-regular fa-computer-classic"></i>&nbsp;&nbsp;<a href="/">Atmizz</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv" class="busuanzi_container_site_uv">
+                        VISITOR COUNT&nbsp;<span id="busuanzi_value_site_uv" class="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="busuanzi_container_site_pv">
+                        TOTAL PAGE VIEWS&nbsp;<span id="busuanzi_value_site_pv" class="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a></span>
+                <br> 
+            <span class="theme-version-container">THEME&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v1.1.6</a>
+        </div>
+        
+        
+        
+            <div id="start_time_div" style="display:none">
+                2023/2/14 12:00:00
+            </div>
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+        
+            <script async data-pjax>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="unfolded-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="fa-regular fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="folded-tools-list">
+        <li class="right-bottom-tools tool-toggle-show flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/layouts/menu-shrink.js"></script>
+
+<script src="/js/tools/go-top-bottom.js"></script>
+
+<script src="/js/tools/dark-light-toggle.js"></script>
+
+
+
+    
+<script src="/js/tools/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/tools/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/layouts/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+
+<div class="post-scripts pjax">
+    
+        
+<script src="/js/tools/toc-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/layouts/toc.js"></script>
+
+<script src="/js/plugins/tabs.js"></script>
+
+    
+    
+</div>
+
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            REDEFINE.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            REDEFINE.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            REDEFINE.refresh();
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
