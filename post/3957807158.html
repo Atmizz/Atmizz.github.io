@@ -23,19 +23,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="洛谷 P2629 好消息，坏消息题解   solutions, 单调队列, 前缀和">
+  <meta name="description" content="洛谷 P2629 好消息，坏消息题解">
 <meta property="og:type" content="article">
 <meta property="og:title" content="洛谷 P2629 好消息，坏消息题解">
 <meta property="og:url" content="http://example.com/post/3957807158.html">
 <meta property="og:site_name" content="Atmizz&#39;s Blog">
-<meta property="og:description" content="洛谷 P2629 好消息，坏消息题解   solutions, 单调队列, 前缀和">
+<meta property="og:description" content="洛谷 P2629 好消息，坏消息题解">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-23T08:07:35.000Z">
-<meta property="article:modified_time" content="2023-05-13T15:51:18.730Z">
+<meta property="article:modified_time" content="2023-05-17T11:01:12.799Z">
 <meta property="article:author" content="Atmizz">
 <meta property="article:tag" content="solutions">
-<meta property="article:tag" content="单调队列">
 <meta property="article:tag" content="前缀和">
+<meta property="article:tag" content="单调队列">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://example.com/post/3957807158.html">
@@ -335,8 +335,17 @@ mjx-container[display="true"] + br {
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-05-13 23:51:18" itemprop="dateModified" datetime="2023-05-13T23:51:18+08:00">2023-05-13</time>
+                <time title="修改时间：2023-05-17 19:01:12" itemprop="dateModified" datetime="2023-05-17T19:01:12+08:00">2023-05-17</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%A2%98%E8%A7%A3/" itemprop="url" rel="index"><span itemprop="name">题解</span></a>
+                </span>
+            </span>
 
           <br>
             <span class="post-meta-item" title="本文字数">
@@ -364,7 +373,6 @@ mjx-container[display="true"] + br {
 
       
         <center> 洛谷 P2629 好消息，坏消息题解 </center>
-<center> solutions, 单调队列, 前缀和 </center>
 <span id="more"></span>
 
 <h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>Uim 在公司里面当秘书，现在有 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.357ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 600 453"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container> 条消息要告知老板。每条消息有一个好坏度，这会影响老板的心情。告知完一条消息后，老板的心情等于老板之前的心情加上这条消息的好坏度。最开始老板的心情是 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 500 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g></g></svg></mjx-container>，一旦老板心情到了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 500 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g></g></svg></mjx-container> 以下就会勃然大怒，炒了 Uim 的鱿鱼。</p>
@@ -422,7 +430,7 @@ mjx-container[display="true"] + br {
       <div class="popular-posts-title"><a href="\post\3333748711.html" rel="bookmark">洛谷 P2704 [NOI2001]炮兵阵地题解</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="\post\1581331821.html" rel="bookmark">洛谷 P3258 [JLOI2014]松鼠的新家题解</a></div>
+      <div class="popular-posts-title"><a href="\post\2756585155.html" rel="bookmark">洛谷 P3870 TJOI2009 开关题解</a></div>
     </li>
   </ul>
 
@@ -430,8 +438,8 @@ mjx-container[display="true"] + br {
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/solutions/" rel="tag"><i class="fa fa-tag"></i> solutions</a>
-              <a href="/tags/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/" rel="tag"><i class="fa fa-tag"></i> 单调队列</a>
               <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/" rel="tag"><i class="fa fa-tag"></i> 前缀和</a>
+              <a href="/tags/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/" rel="tag"><i class="fa fa-tag"></i> 单调队列</a>
           </div>
 
         
@@ -526,6 +534,12 @@ mjx-container[display="true"] + br {
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
@@ -587,7 +601,7 @@ mjx-container[display="true"] + br {
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">16 分钟</span>
+    <span title="站点阅读时长">15 分钟</span>
 </div>
 
 <br /> #换行
