@@ -23,22 +23,22 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="CF 1360F - Spy-string题解">
+  <meta name="description" content="CF 1730B - Meeting on the Line题解">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CF 1360F - Spy-string题解">
-<meta property="og:url" content="http://example.com/post/614255496.html">
+<meta property="og:title" content="CF 1730B - Meeting on the Line题解">
+<meta property="og:url" content="http://example.com/post/2210389757.html">
 <meta property="og:site_name" content="Atmizz&#39;s Blog">
-<meta property="og:description" content="CF 1360F - Spy-string题解">
+<meta property="og:description" content="CF 1730B - Meeting on the Line题解">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/Atmizz/picturebox/main/Github_blog/pictures/CF%201360F.png">
-<meta property="article:published_time" content="2023-11-16T12:52:11.000Z">
-<meta property="article:modified_time" content="2023-11-16T12:55:39.324Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/Atmizz/picturebox/main/Github_blog/pictures/CF%201730B.png">
+<meta property="article:published_time" content="2023-12-02T07:56:11.000Z">
+<meta property="article:modified_time" content="2023-12-02T07:58:05.945Z">
 <meta property="article:author" content="Atmizz">
-<meta property="article:tag" content="暴力">
+<meta property="article:tag" content="二分">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/Atmizz/picturebox/main/Github_blog/pictures/CF%201360F.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Atmizz/picturebox/main/Github_blog/pictures/CF%201730B.png">
 
-<link rel="canonical" href="http://example.com/post/614255496.html">
+<link rel="canonical" href="http://example.com/post/2210389757.html">
 
 
 <script id="page-configurations">
@@ -51,7 +51,7 @@
   };
 </script>
 
-  <title>CF 1360F - Spy-string题解 | Atmizz's Blog</title>
+  <title>CF 1730B - Meeting on the Line题解 | Atmizz's Blog</title>
   
 
 
@@ -305,7 +305,7 @@ mjx-container[display="true"] + br {
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/post/614255496.html">
+    <link itemprop="mainEntityOfPage" href="http://example.com/post/2210389757.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/avatar.jpg">
@@ -318,7 +318,7 @@ mjx-container[display="true"] + br {
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          CF 1360F - Spy-string题解
+          CF 1730B - Meeting on the Line题解
         </h1>
 
         <div class="post-meta">
@@ -329,7 +329,7 @@ mjx-container[display="true"] + br {
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-11-16 20:52:11 / 修改时间：20:55:39" itemprop="dateCreated datePublished" datetime="2023-11-16T20:52:11+08:00">2023-11-16</time>
+              <time title="创建时间：2023-12-02 15:56:11 / 修改时间：15:58:05" itemprop="dateCreated datePublished" datetime="2023-12-02T15:56:11+08:00">2023-12-02</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -351,7 +351,7 @@ mjx-container[display="true"] + br {
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.3k</span>
+              <span>1.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -370,18 +370,20 @@ mjx-container[display="true"] + br {
     <div class="post-body" itemprop="articleBody">
 
       
-        <center> CF 1360F - Spy-string题解 </center>
+        <center> CF 1730B - Meeting on the Line题解 </center>
 <span id="more"></span>
 
-<p><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1360/problem/F">原题链接</a></p>
-<h4 id="Problem-Description"><a href="#Problem-Description" class="headerlink" title="Problem Description"></a>Problem Description</h4><p><img src="https://raw.githubusercontent.com/Atmizz/picturebox/main/Github_blog/pictures/CF%201360F.png"></p>
-<h4 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">5</span><br><span class="line">2 4</span><br><span class="line">abac</span><br><span class="line">zbab</span><br><span class="line">2 4</span><br><span class="line">aaaa</span><br><span class="line">bbbb</span><br><span class="line">3 3</span><br><span class="line">baa</span><br><span class="line">aaa</span><br><span class="line">aab</span><br><span class="line">2 2</span><br><span class="line">ab</span><br><span class="line">bb</span><br><span class="line">3 1</span><br><span class="line">a</span><br><span class="line">b</span><br><span class="line">c</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/1730/B">原题链接</a></p>
+<h4 id="Problem-Description"><a href="#Problem-Description" class="headerlink" title="Problem Description"></a>Problem Description</h4><p><img src="https://raw.githubusercontent.com/Atmizz/picturebox/main/Github_blog/pictures/CF%201730B.png"></p>
+<h4 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">7</span><br><span class="line">1</span><br><span class="line">0</span><br><span class="line">3</span><br><span class="line">2</span><br><span class="line">3 1</span><br><span class="line">0 0</span><br><span class="line">2</span><br><span class="line">1 4</span><br><span class="line">0 0</span><br><span class="line">3</span><br><span class="line">1 2 3</span><br><span class="line">0 0 0</span><br><span class="line">3</span><br><span class="line">1 2 3</span><br><span class="line">4 1 2</span><br><span class="line">3</span><br><span class="line">3 3 3</span><br><span class="line">5 3 3</span><br><span class="line">6</span><br><span class="line">5 4 7 2 10 4</span><br><span class="line">3 2 5 1 4 6</span><br></pre></td></tr></table></figure>
 
-<h4 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">abab</span><br><span class="line">-1</span><br><span class="line">aaa</span><br><span class="line">ab</span><br><span class="line">z</span><br></pre></td></tr></table></figure>
+<h4 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">0</span><br><span class="line">2</span><br><span class="line">2.5</span><br><span class="line">2</span><br><span class="line">1</span><br><span class="line">3</span><br><span class="line">6</span><br></pre></td></tr></table></figure>
 
-<h4 id="解析："><a href="#解析：" class="headerlink" title="解析："></a>解析：</h4><p>暴力即可，把第一个字符串作为模板，然后每一位枚举 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 1000 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z" transform="translate(500,0)"></path></g></g></g></svg></mjx-container> 个字母形成答案串</p>
-<p>与其他串作比较，如果符合条件就输出。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="comment">//#pragma GCC optimize(2)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ls k &lt;&lt; 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> rs k &lt;&lt; 1 | 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> pi std :: pair<span class="string">&lt;int, int&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> endl <span class="string">"\n"</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> deb(x) std :: cout &lt;&lt; #x &lt;&lt; <span class="string">" = "</span> &lt;&lt; x &lt;&lt; <span class="string">'\n'</span>;</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> DEB std :: cout &lt;&lt; <span class="string">"ok"</span> &lt;&lt; endl;</span></span><br><span class="line"><span class="keyword">using</span> i64 = <span class="type">long</span> <span class="type">long</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> Range = <span class="number">1e9</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">double</span> eps = <span class="number">1e-6</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> Mod = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="comment">// const int N = ;</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>{</span><br><span class="line">    <span class="type">int</span> n, m; std :: cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">    std :: vector &lt;std :: string&gt; <span class="built_in">a</span>(n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; ++ i)</span><br><span class="line">        std :: cin &gt;&gt; a[i];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; m; ++ j) {</span><br><span class="line">        std :: string ans = a[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> k = <span class="number">0</span>; k &lt; <span class="number">26</span>; ++ k) {</span><br><span class="line">            ans[j] = <span class="built_in">char</span>(k + <span class="string">'a'</span>);</span><br><span class="line">            <span class="type">int</span> flag = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> h = <span class="number">0</span>; h &lt; n; ++ h) {</span><br><span class="line">                <span class="type">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">for</span>(<span class="type">int</span> s = <span class="number">0</span>; s &lt; m; ++ s)</span><br><span class="line">                    <span class="keyword">if</span>(ans[s] != a[h][s]) cnt ++;</span><br><span class="line">                <span class="keyword">if</span>(cnt &gt; <span class="number">1</span>) {</span><br><span class="line">                    flag = <span class="number">1</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                }</span><br><span class="line">                <span class="keyword">if</span>(flag == <span class="number">1</span>) <span class="keyword">break</span>;</span><br><span class="line">            }</span><br><span class="line">            <span class="keyword">if</span>(flag == <span class="number">0</span>) {</span><br><span class="line">                std :: cout &lt;&lt; ans &lt;&lt; endl;</span><br><span class="line">                <span class="keyword">return</span> ;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    std :: cout &lt;&lt; <span class="number">-1</span> &lt;&lt; endl;</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    <span class="comment">//freopen("1.in", "r", stdin);</span></span><br><span class="line">    <span class="comment">//freopen("1.out", "w", stdout);</span></span><br><span class="line">    std :: ios :: <span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std :: cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    std :: cout.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> T = <span class="number">1</span>;</span><br><span class="line">    std :: cin &gt;&gt; T; </span><br><span class="line">    <span class="keyword">while</span>(T --) <span class="built_in">solve</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h4 id="解析："><a href="#解析：" class="headerlink" title="解析："></a>解析：</h4><p>首先，枚举位置肯定是行不通的。</p>
+<p>看着范围这么大，很容易想到二分，但是二分位置也是不合理的。</p>
+<p>所以，我们可以考虑二分时间，然后反推位置。</p>
+<p>思路很简单，二分出时间后，取到所有人活动的范围，然后取一个交集即可。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="comment">//#pragma GCC optimize(2)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ls k &lt;&lt; 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> rs k &lt;&lt; 1 | 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PII std :: pair<span class="string">&lt;int, int&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> endl <span class="string">"\n"</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> deb(x) std :: cout &lt;&lt; #x &lt;&lt; <span class="string">" = "</span> &lt;&lt; x &lt;&lt; <span class="string">'\n'</span>;</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> DEB std :: cout &lt;&lt; <span class="string">"ok"</span> &lt;&lt; endl;</span></span><br><span class="line"><span class="keyword">using</span> i64 = <span class="type">long</span> <span class="type">long</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="type">const</span> i64 LLINF = <span class="number">0x3f3f3f3f3f3f3f3f</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">double</span> Range = <span class="number">1e9</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">double</span> eps = <span class="number">1e-6</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> Mod = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1e5</span> + <span class="number">20</span>;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="type">double</span> a[N], t[N], ans;</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">check</span><span class="params">(<span class="type">double</span> x)</span> </span>{</span><br><span class="line">    <span class="type">double</span> l = <span class="number">0</span>, r = Range;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++ i) {</span><br><span class="line">        <span class="keyword">if</span>(x &lt;= t[i]) {</span><br><span class="line">            l = std :: <span class="built_in">max</span>(l, a[i]);</span><br><span class="line">            r = std :: <span class="built_in">min</span>(r, a[i]);</span><br><span class="line">        } <span class="keyword">else</span> {</span><br><span class="line">            l = std :: <span class="built_in">max</span>(l, a[i] - (x - t[i]));</span><br><span class="line">            r = std :: <span class="built_in">min</span>(r, a[i] + (x - t[i]));</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    ans = l;</span><br><span class="line">    <span class="keyword">return</span> l &lt;= r;</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>{</span><br><span class="line">    std :: cin &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++ i)</span><br><span class="line">        std :: cin &gt;&gt; a[i];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++ i)</span><br><span class="line">        std :: cin &gt;&gt; t[i];</span><br><span class="line">    <span class="type">double</span> l = <span class="number">0</span>, r = Range;</span><br><span class="line">    <span class="keyword">while</span>(r - l &gt;= eps) {</span><br><span class="line">        <span class="type">double</span> mid = (l + r) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">check</span>(mid)) r = mid;</span><br><span class="line">        <span class="keyword">else</span> l = mid;</span><br><span class="line">    }</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%.6lf\n"</span>, ans);</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    <span class="comment">//freopen("1.in", "r", stdin);</span></span><br><span class="line">    <span class="comment">//freopen("1.out", "w", stdout);</span></span><br><span class="line">    std :: ios :: <span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std :: cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    std :: cout.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="type">int</span> T = <span class="number">1</span>;</span><br><span class="line">    std :: cin &gt;&gt; T; </span><br><span class="line">    <span class="keyword">while</span>(T --) <span class="built_in">solve</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -401,26 +403,17 @@ mjx-container[display="true"] + br {
   <div class="popular-posts-header">相关文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="\post\3518355615.html" rel="bookmark">CF 1395D - Boboniu Chats with Du题解</a></div>
+      <div class="popular-posts-title"><a href="\post\248256200.html" rel="bookmark">CF 1622C - Set or Decrease题解</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="\post\3670149279.html" rel="bookmark">CF 1537E1 - Erase and Extend (Easy Version)题解</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="\post\3694985655.html" rel="bookmark">CF 1474C - Array Destruction题解</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="\post\224910530.html" rel="bookmark">CF 1615C - Menorah题解</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="\post\2327128442.html" rel="bookmark">CF 1632C - Strange Test题解</a></div>
+      <div class="popular-posts-title"><a href="\post\1114312715.html" rel="bookmark">CF 372A - Counting Kangaroos is Fun题解</a></div>
     </li>
   </ul>
 
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%9A%B4%E5%8A%9B/" rel="tag"><i class="fa fa-tag"></i> 暴力</a>
+              <a href="/tags/%E4%BA%8C%E5%88%86/" rel="tag"><i class="fa fa-tag"></i> 二分</a>
           </div>
 
         
@@ -429,13 +422,10 @@ mjx-container[display="true"] + br {
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/post/2774934111.html" rel="prev" title="CF 1753B - Factorial Divisibility题解">
-      <i class="fa fa-chevron-left"></i> CF 1753B - Factorial Divisibility题解
+    <a href="/post/2254919326.html" rel="prev" title="CF 1217B - Zmei Gorynich题解">
+      <i class="fa fa-chevron-left"></i> CF 1217B - Zmei Gorynich题解
     </a></div>
-      <div class="post-nav-item">
-    <a href="/post/275361330.html" rel="next" title="CF 148D - Bag of mice题解">
-      CF 148D - Bag of mice题解 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -730,7 +720,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'comments',
       owner       : 'atmizz',
       admin       : ['atmizz'],
-      id          : '55d6971990318f76736b6e57bebca14d',
+      id          : '80c3ecbdedb92c3a7564bda90b6a51c5',
         language: '',
       distractionFreeMode: false
     });
